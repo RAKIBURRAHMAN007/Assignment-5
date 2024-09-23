@@ -17,6 +17,7 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
     
     document.getElementById('main-balance').innerText=currentBalance;
     document.getElementById('noakhali-amount').innerText=currentNoakhaliBalance;
+    my_modal_1.showModal();
 })
 
 // feni donation
@@ -39,6 +40,7 @@ document.getElementById('feni-donation-btn').addEventListener('click',function(e
     
     document.getElementById('main-balance').innerText=currentBalance;
     document.getElementById('feni-amount').innerText=currentFeniBalance;
+    my_modal_2.showModal();
 })
 // quota movement donate
 
@@ -61,4 +63,6 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
     
     document.getElementById('main-balance').innerText=currentBalance;
     document.getElementById('quota-amount').innerText=currentQuotaBalance;
+    my_modal_3.showModal();
+    
 })
