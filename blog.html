@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+         .font-lexend{
+              font-family: "Lexend", sans-serif;
+            }
+    </style>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-btn-color': '#B4F461',
+                'nav-bg-color': '#F9F7F3',
+                
+                
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-lexend">
+    <header class=" sticky top-0 z-10  backdrop-blur-xl ">
+        <section class=" bg-nav-bg-color bg-opacity-70 ">
+          <nav class="text-center lg:flex justify-between px-4 lg:px-36 py-4  ">
+           <a href="index.html"> <button id="home" class="btn btn-lg bg-primary-btn-color font-bold text-xl">Home</button></a>
+
+            <div class="flex justify-center items-center gap-3">
+              <img src="assets/logo.png" alt="">
+              <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
+            </div>
+            <div class="flex text-center justify-center items-center gap-3">
+              <img  src="assets/coin.png" alt="">
+              <div id="main-balance" class="text-xl ">5500</div>
+              <h1 class="text-xl">BDT</h1>
+
+            </div>
+
+          
+
+
+
+        </nav>
+        </section>
+
+        
+
+    </header>
+    <br><br><br>
+    <main class="py-4 px-4 ">
+        <h1 class="font-bold text-3xl text-center">Important FAQ</h1><br>
+        <div class="h-96 lg:px-36 py-4 ">
+          <div class="collapse bg-base-200  bg-white border rounded-xl">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing developers to access and manipulate the content, structure, and style of a webpage using programming languages like JavaScript.</p>
+            </div>
+          </div>
+          <div class="collapse bg-base-200  bg-white border rounded-xl">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, I can use various methods in JavaScript. getElementById retrieves an element by its unique ID, while getElementsByClassName and getElementsByTagName select multiple elements by class or tag, respectively. For more flexible selection, querySelector gets the first element matching a CSS selector, and querySelectorAll retrieves all matching elements. </p>
+            </div>
+          </div>
+          <div class="collapse bg-base-200  bg-white border rounded-xl">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique that involves attaching a single event listener to a parent element instead of individual child elements. This takes advantage of event bubbling, allowing the parent to handle events triggered by its children. It improves performance by reducing the number of event listeners and simplifies code maintenance, especially for dynamically added elements. Overall, it enhances efficiency and keeps your code cleaner.</p>
+            </div>
+          </div>
+          <div class="collapse bg-base-200  bg-white border rounded-xl">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique that involves attaching a single event listener to a parent element instead of individual child elements. This takes advantage of event bubbling, allowing the parent to handle events triggered by its children. It improves performance by reducing the number of event listeners and simplifies code maintenance, especially for dynamically added elements. Overall, it enhances efficiency and keeps your code cleaner.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </main>
+    
+    
+ 
+    <script src="button.js"></script>
+</body>
+</html>

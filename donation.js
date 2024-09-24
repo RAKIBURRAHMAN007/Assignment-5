@@ -32,14 +32,15 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
    
     const donationParagraph = document.createElement('p');
     donationParagraph.innerText = `${donationAmount} Taka is donated for flood relief in Noakhali, Bangladesh.`;
-    donationParagraph.style.fontSize='30px';
+    donationParagraph.style.fontSize='22px';
     donationParagraph.style.fontWeight='700px';
+    donationParagraph.style.marginBottom = '10px';
     card.appendChild(donationParagraph); 
     const dateString = new Date().toString(); 
     const dateParagraph = document.createElement('p');
     dateParagraph.innerText =`Date : ${dateString}`;
     
-    dateParagraph.style.fontSize='17px';
+    // dateParagraph.style.fontSize='15px';
     
     card.appendChild(dateParagraph);
     document.getElementById('history-container').appendChild(card);
@@ -72,16 +73,20 @@ document.getElementById('feni-donation-btn').addEventListener('click',function(e
     card2.style.borderRadius='10px';
     card2.style.padding='50px';
     card2.style.margin='10px'
+
     const donationParagraph=document.createElement('p');
     donationParagraph.innerText=`${donationAmount} Taka is Donated for Flood Relief in Feni,Bangladesh`;
-    donationParagraph.style.fontSize='30px';
+    donationParagraph.style.fontSize='22px';
     donationParagraph.style.fontWeight='700px'
+    donationParagraph.style.marginBottom = '10px';
     card2.appendChild(donationParagraph);
 
     const dateString=new Date().toString();
     const dateParagraph=document.createElement('p');
     dateParagraph.innerText=`Date : ${dateString}`;
+    
     card2.appendChild(dateParagraph);
+
     document.getElementById('history-container').appendChild(card2);
 
     my_modal_2.showModal();
@@ -114,8 +119,9 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
     card3.style.margin='10px'
     const donationParagraph=document.createElement('p');
     donationParagraph.innerText=`${donationAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
-    donationParagraph.style.fontSize='30px';
+    donationParagraph.style.fontSize='22px';
     donationParagraph.style.fontWeight='700px'
+    donationParagraph.style.marginBottom = '10px';
     card3.appendChild(donationParagraph);
 
     const dateString=new Date().toString();
