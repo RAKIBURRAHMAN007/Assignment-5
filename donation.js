@@ -7,7 +7,7 @@ document.getElementById('noakhali-donation-btn').addEventListener('click',functi
 
     const currentBalance=orginalBalance-donationAmount;
 
-    if(donationAmount>orginalBalance || donationAmount<0 ){
+    if(donationAmount>orginalBalance || donationAmount<=0 ){
         alert('You Canot Donate,Insufficient Balance.');
         return;
     }
@@ -57,7 +57,7 @@ document.getElementById('feni-donation-btn').addEventListener('click',function(e
     const currentFeniBalance=orginalFeniBalance+donationAmount;
 
     const currentBalance=orginalBalance-donationAmount;
-    if(donationAmount>orginalBalance || donationAmount<0){
+    if(donationAmount>orginalBalance || donationAmount<=0){
         alert('You Canot Donate,Insufficient Balance.');
         return;
     }
@@ -101,7 +101,7 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
     const currentQuotaBalance=orginalQuotaBalance+donationAmount;
 
     const currentBalance=orginalBalance-donationAmount;
-    if(donationAmount>orginalBalance || donationAmount<0){
+    if(donationAmount>orginalBalance || donationAmount<=0){
         alert('You Canot Donate,Insufficient Balance.');
         return;
     }
