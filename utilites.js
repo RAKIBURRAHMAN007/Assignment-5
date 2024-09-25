@@ -2,7 +2,7 @@ function findInputFeildValueById(id){
     const inputValue=document.getElementById(id).value;
     const inputNum=parseFloat(inputValue);
     if(isNaN(inputValue)){
-        alert('Enter Valid Amount');
+        
         return;
     }
     return inputNum;
